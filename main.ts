@@ -105,7 +105,7 @@ portalwin2 = sprites.create(img`
     . . . . . . . . . . . . . . . . 
     `, SpriteKind.WinPortal)
 tiles.placeOnTile(portalwin2, tiles.getTileLocation(24, 1))
-tiles.placeOnTile(the_coward, tiles.getTileLocation(1, 5))
+tiles.placeOnTile(the_coward, tiles.getTileLocation(1, 7))
 controller.moveSprite(the_coward, 100, 100)
 scene.cameraFollowSprite(the_coward)
 let PIGGYAHHH = sprites.create(img`
@@ -127,3 +127,4 @@ let PIGGYAHHH = sprites.create(img`
     . . . . . . . . . . . . . . . . 
     `, SpriteKind.Enemy)
 tiles.placeOnTile(PIGGYAHHH, tiles.getTileLocation(1, 2))
+PIGGYAHHH.follow(the_coward)
